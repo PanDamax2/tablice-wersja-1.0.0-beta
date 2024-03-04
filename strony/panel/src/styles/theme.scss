@@ -1,0 +1,42 @@
+:root {
+	--bg: #151c2c;
+	--bgSoft: #182237;
+	--text: #eee;
+	--textSoft: #b7bac1;
+	--active: #2e374a;
+
+	--bg-gradient: transparent;
+	--wrapper-gradient: transparent;
+
+	--activeLabel: #01c9f1;
+
+	[data-theme='dark'] {
+		--bg: #151c2c;
+		--bgSoft: #182237;
+		--text: #eee;
+		--textSoft: #b7bac1;
+		--active: #2e374a;
+
+		--activeLabel: #01c9f1;
+	}
+
+	[data-theme='light'] {
+		--bg: #d5f3fe;
+		--bgSoft: #62a4f3;
+		// --bg: #EBECEC;
+		// --bgSoft: #c6cbd3;
+		--text: #151923;
+		--textSoft: #1f2b43;
+		--active: #fff6c4;
+		// --active: #a9c5ff;
+
+		--activeLabel: #07c500;
+
+		--bg-gradient: linear-gradient(45deg, #bdcae9 0%, #e4efe9 100%);
+		--wrapper-gradient: linear-gradient(107deg, rgb(99, 171, 249) 37.4%, rgb(45, 140, 241) 92.7%);
+
+		img {
+			filter: invert(0);
+		}
+	}
+}

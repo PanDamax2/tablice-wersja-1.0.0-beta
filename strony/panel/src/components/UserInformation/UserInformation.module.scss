@@ -1,0 +1,26 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.4em;
+	margin-left: auto;
+	height: max-content;
+	width: 100%;
+	max-width: 200px;
+	color: var(--textSoft);
+	background-color: var(--bg);
+	border-radius: 0.4em;
+	font-weight: bold;
+}
+
+.img {
+	width: 100%;
+	max-width: 150px;
+	aspect-ratio: 1;
+}
+
+.name {
+	margin-top: 0.4em;
+	text-transform: capitalize;
+}

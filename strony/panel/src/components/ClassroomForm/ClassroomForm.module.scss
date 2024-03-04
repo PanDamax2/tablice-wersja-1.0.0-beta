@@ -1,0 +1,56 @@
+.wrapper {
+	margin: 0 auto;
+	width: 60vw;
+	overflow-x: auto;
+}
+
+.container {
+	margin: 1em 0;
+}
+
+.form {
+	display: inline;
+}
+
+.boxInput {
+	background-color: #efefef;
+	border-bottom: 1px solid #eee;
+}
+
+.input {
+	display: inline-block;
+	padding: 0.8em;
+	width: 100%;
+	color: var(--text);
+	background-color: var(--bg);
+	border: 2px solid var(--text);
+	font-size: 1.7rem;
+}
+
+.delete,
+.update {
+	padding: 0.4em 1em;
+	color: var(--text);
+	background-color: rgb(151, 0, 0);
+	transition: background-color 0.3s;
+	font-weight: bold;
+
+	&:hover {
+		background-color: rgb(127, 6, 6);
+	}
+}
+
+.update {
+	background-color: teal;
+
+	&:hover {
+		background-color: rgb(5, 106, 106);
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 100%;
+		max-width: 700px;
+	}
+}

@@ -1,0 +1,29 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 700px;
+}
+
+.button {
+	margin: 1.4em 0 0.6em;
+	padding: 0.6em 1.8em;
+	color: var(--bg);
+	background-color: var(--textSoft);
+	font-weight: bold;
+}
+
+.input {
+	display: inline-block;
+	padding: 0.6em;
+	width: 100%;
+	color: var(--text);
+	background-color: var(--bg);
+	border: 2px solid var(--text);
+	font-size: 1.7rem;
+}
+
+.textarea {
+	min-height: 150px;
+	max-height: 270px;
+	resize: vertical;
+}

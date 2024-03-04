@@ -1,0 +1,19 @@
+.list {
+	list-style-type: none;
+}
+
+.cat {
+	display: block;
+	margin: 1em 0 0.8em;
+	color: var(--textSoft);
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+@media (min-width: 810px) {
+	.cat {
+		margin-left: 1.4em;
+		text-align: left;
+	}
+}

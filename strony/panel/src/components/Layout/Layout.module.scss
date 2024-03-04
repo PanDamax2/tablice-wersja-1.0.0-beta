@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+}
+
+.menu {
+	flex: 1;
+	width: 65px;
+	max-width: max-content;
+	min-height: 100vh;
+	background-color: var(--bgSoft);
+	background-image: var(--wrapper-gradient);
+}
+
+.content {
+	display: flex;
+    flex-direction: column;
+	flex: 4;
+	padding: 1.2em;
+}

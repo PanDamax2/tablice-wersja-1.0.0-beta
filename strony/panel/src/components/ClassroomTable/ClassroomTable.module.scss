@@ -1,0 +1,25 @@
+.table {
+    margin: 0 auto;
+    width: max-content;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 1.8rem;
+
+	thead {
+		color: var(--bg);
+		background-color: var(--textSoft);
+	}
+
+	th,
+	td {
+		padding: 0.4em 1.6em;
+
+		&:not(:last-child) {
+			border-right: 1px solid var(--bgSoft);
+		}
+	}
+
+	td {
+		background-color: var(--bg);
+	}
+}

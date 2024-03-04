@@ -1,0 +1,14 @@
+.label {
+	display: inline-block;
+	padding: 0.2em 1em;
+	color: var(--bg);
+	background-color: var(--text);
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	transform: translateY(1px);
+	user-select: none;
+	pointer-events: none;
+}

@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2em;
+
+	span {
+		font-size: 2rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	img {
+		max-width: 140px;
+		filter: invert(1);
+		object-fit: cover;
+	}
+}

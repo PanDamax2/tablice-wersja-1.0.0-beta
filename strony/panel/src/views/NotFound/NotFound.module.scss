@@ -1,0 +1,88 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.eye {
+	display: inline-block;
+	position: relative;
+	margin: 0 1em;
+	width: 75px;
+	height: 80px;
+	background-color: var(--text);
+	border-radius: 50% 50% 50% 50%/45px 45px 45% 45%;
+	transform: rotate(45deg);
+    animation: shocked 0.2s infinite;
+    
+	&::after {
+        content: '';
+		position: absolute;
+		left: 0px;
+		bottom: -10px;
+		width: 70px;
+		height: 50px;
+		border-bottom: 2px solid var(--text);
+		border-radius: 50%;
+	}
+    
+	&::before {
+        content: '';
+		position: absolute;
+		top: 30px;
+		left: 25px;
+		width: 20px;
+		height: 20px;
+		background: var(--bg);
+		border-radius: 50%;
+        animation: move 2.5s infinite;
+	}
+}
+
+.error {
+    margin-top: 0.7em;
+    margin-bottom: 0.1em;
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.return {
+	padding: 0.4em;
+	border-bottom: 1px solid #eee;
+	font-size: 2.2rem;
+}
+
+@keyframes shocked {
+	0% {
+		transform: translate(1px, 1em);
+	}
+	50% {
+		transform: translate(0, 1em);
+	}
+	100% {
+		transform: translate(-1px, 1em);
+	}
+}
+
+@keyframes move {
+	0%,
+	30%,
+	55%,
+	90%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10%,
+	25% {
+		transform: translate(0, 20px);
+	}
+
+	65% {
+		transform: translate(-20px, 0);
+	}
+	80% {
+		transform: translate(20px, 0);
+	}
+}

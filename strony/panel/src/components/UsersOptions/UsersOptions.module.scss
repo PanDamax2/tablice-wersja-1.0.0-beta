@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.addButton {
+	padding: 0.8em 1.6em;
+	color: var(--text);
+	background-color: #5d57c9;
+	border-radius: 0.2em;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: #524dbc;
+	}
+}
+
+@media (min-width: 561px) {
+	.container {
+		justify-content: space-between;
+	}
+}

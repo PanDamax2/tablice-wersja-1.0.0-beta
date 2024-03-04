@@ -1,0 +1,24 @@
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+}
+
+.heading {
+	padding: 0.4em 1em;
+	margin-bottom: 0.4em;
+	color: #000;
+	background-color: #75afe5;
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.text {
+	min-height: 170px;
+	background-size: cover;
+	background-position: center;
+	font-size: 1.6rem;
+	line-height: 120%;
+}

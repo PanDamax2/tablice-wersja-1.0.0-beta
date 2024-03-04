@@ -1,0 +1,56 @@
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	padding: 0.7em 0;
+	margin: 0.4em 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 3px;
+		height: 36px;
+		background-color: var(--activeLabel);
+		opacity: 0;
+		transform: translateY(-50%);
+		transition: opacity 0.3s;
+	}
+
+	&:hover,
+	&.active {
+		background-color: var(--active);
+	}
+
+	&.active::before {
+		opacity: 1;
+	}
+
+	img {
+		width: 31px;
+		height: 29px;
+        filter: invert(1);
+	}
+}
+
+.title {
+	display: none;
+}
+
+@media (min-width: 810px) {
+	.container {
+		justify-content: flex-start;
+		padding-right: 4em;
+
+		img {
+			margin-left: 1em;
+		}
+	}
+
+	.title {
+		display: block;
+	}
+}

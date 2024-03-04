@@ -1,0 +1,12 @@
+.container {
+	margin: 0 auto;
+	width: 60vw;
+	overflow-x: auto;
+}
+
+
+@media (min-width: 1180px) {
+	.container {
+		width: max-content;
+	}
+}

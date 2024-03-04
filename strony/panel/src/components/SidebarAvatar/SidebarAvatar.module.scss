@@ -1,0 +1,37 @@
+.user {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.2em;
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+}
+
+.userImage {
+	object-fit: cover;
+}
+
+.userDetail {
+	display: none;
+}
+
+.username {
+	font-weight: 500;
+}
+
+.userTitle {
+	color: var(--textSoft);
+	font-size: 1.2rem;
+}
+
+@media (min-width: 918px) {
+	.user {
+		justify-content: flex-start;
+		margin-left: 1em;
+	}
+
+	.userDetail {
+		display: flex;
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	// margin-top: 2em;
+	padding-top: 2em;
+    margin-top: auto;
+	color: var(--textSoft);
+}
+
+.logo {
+	font-weight: bold;
+}
+
+.text {
+	font-size: 1.6rem;
+}

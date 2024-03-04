@@ -1,0 +1,8 @@
+.title {
+	color: var(--textSoft);
+	margin-bottom: 0.8em;
+
+	&:last-of-type {
+		margin-top: 1em;
+	}
+}

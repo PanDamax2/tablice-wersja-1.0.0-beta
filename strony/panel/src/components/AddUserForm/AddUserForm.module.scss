@@ -1,0 +1,28 @@
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.4em;
+	margin: 1.2em auto 1em;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.selectedBox {
+	display: flex;
+	flex-direction: column;
+
+	label {
+		padding: 0 0.2em 0.4em;
+		font-size: 1.8rem;
+	}
+
+	select {
+		padding: 0.4em 0.6em;
+		font-size: 1.8rem;
+		color: var(--text);
+		background-color: var(--bg);
+		cursor: pointer;
+	}
+}

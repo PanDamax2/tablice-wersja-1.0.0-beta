@@ -1,0 +1,88 @@
+.container {
+	margin: .6em auto;
+}
+
+.form{
+	display: inline;
+}
+
+
+.label {
+	display: inline-block;
+	padding: 0.2em 1em;
+	color: var(--bg);
+	background-color: var(--text);
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	transform: translateY(1px);
+	user-select: none;
+	pointer-events: none;
+}
+
+.input {
+	display: inline-block;
+	padding: 0.6em;
+	color: var(--text);
+	background-color: var(--bg);
+	border: 2px solid var(--text);
+	font-size: 1.7rem;
+
+	&.short {
+		padding: 8px 0.4em;
+		width: 38px;
+	}
+
+	&.mid {
+		padding: 8px 0.4em;
+		width: 72px;
+	}
+
+	&.long {
+		padding: 8px 0.4em;
+		width: 206px;
+	}
+}
+
+
+
+.delete,
+.update {
+	padding: 0.4em 1em;
+	color: var(--text);
+	background-color: rgb(151, 0, 0);
+	transition: background-color .3s;
+	font-weight: bold;
+	
+	&:hover{
+		background-color: rgb(127, 6, 6);
+	}
+}
+
+.update {
+	background-color: teal;
+
+	&:hover{
+		background-color: rgb(5, 106, 106);
+	}
+}
+
+// .button {
+// 	display: block;
+// 	padding: 1em;
+// 	margin: 0 auto;
+// 	margin-top: 1.6em;
+// 	width: 100%;
+// 	max-width: 700px;
+// 	color: var(--text);
+// 	background-color: teal;
+// 	border: none;
+// 	transition: background-color 0.3s;
+// 	cursor: pointer;
+
+// 	&:hover {
+// 		background-color: rgb(2, 107, 107);
+// 	}
+// }

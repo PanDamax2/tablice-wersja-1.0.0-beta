@@ -1,0 +1,30 @@
+.logout {
+	display: flex;
+	align-items: center;
+	gap: 0.4em;
+	padding: 0.6em 0.8em;
+	width: 100%;
+	color: var(--text);
+	background-color: transparent;
+	font-size: 1.6rem;
+
+	&:hover {
+		background-color: var(--special);
+	}
+
+	img {
+		filter: invert(1);
+	}
+
+	span {
+		display: none;
+	}
+}
+
+@media (min-width: 500px) {
+	.logout {
+		span {
+			display: block;
+		}
+	}
+}
