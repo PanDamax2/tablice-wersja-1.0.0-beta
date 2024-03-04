@@ -28,3 +28,4 @@ Odpalamy instalator i zekamy aż się wykona.
 Jeśli wyskoczyl błąd, to znaczy że nie mamy zainstalowanego node.
 
 ## 4. Odpalamy strony
+Odpalamy poszczegolne pliki zaczynające się na open i nie zamykamy  konsoli.
