@@ -6,7 +6,7 @@ const initializeApp = async () => {
 	try {
 		const hiddenData = await getDataFromDatabase('hidden-sections')
 		const headerData = await getDataFromDatabase('headers')
-		
+
 		if (hiddenData.length !== 0) {
 			document.querySelector('.loader').classList.add('none')
 			document.querySelector('.main-content').classList.remove('none')
@@ -54,7 +54,7 @@ const renderHeader = (data) => {
 		bellSpan.textContent = data.bell
 	} else {
 		startTimer(bellSpan)
-		setInterval(startTimer, 60_000)
+		setInterval(startTimer(bellSpan), 60_000)
 	}
 }
 
@@ -88,8 +88,9 @@ function renderReplacements(data) {
 	const tbodyHeight = table.clientHeight
 	const distance = tbodyHeight - containerHeight + stickyThead
 
-	if (tbodyHeight < containerHeight) return console.log('mniejszy')
-	table.style.setProperty('--scroll-distance', `${-distance}px`)
+	if (tbodyHeight > containerHeight)
+		return table.style.setProperty('--scroll-distance', `${-distance}px`)
+	table.style.setProperty('--scroll-distance', `0`)
 }
 
 function renderSlider(imagesData) {
